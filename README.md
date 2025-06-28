@@ -1,8 +1,17 @@
-CAMEL CASE variáveis: camel_case arquivos: camel_case nodes/classes: CamelCase inputs: 'Camel_Case'
+CAMEL CASES
+variáveis: camel_case
+arquivos: camel_case
+nodes/classes: CamelCase
+inputs: 'Camel_Case'
 
 PASTAS
 
-a godot recomenda guardar por contexto e não por tipo ou seja, ao invés de ter as pastas: scripts, sprites, sounds... você tem: player > player_script player_sprite player_sound...
+a godot recomenda guardar por contexto e não por tipo
+ou seja, ao invés de ter as pastas: scripts, sprites, sounds...
+você tem: player >
+              - player_script
+              - player_sprite
+              - player_sound...
 
 algumas pastas que criei prototype: pra jogar aquelas coisas que a gente vai deletar depois utilities: alguns scripts e outras coisas necessárias scenes: isso é de cenas mesmo (como main menu, jogo, tela de créditos) e não de .tscn. não sabia que nome colocar talvez seja melhor trocar depois pq fica confuso
 
