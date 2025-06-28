@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://e2ypvcah6d2o"]
+
+[ext_resource type="Script" path="res://utilities/sprite_stack.gd" id="1_auxoj"]
+[ext_resource type="Script" path="res://entities/player/player.gd" id="1_nmb7p"]
+[ext_resource type="Texture2D" uid="uid://b37k5xdk6pjvh" path="res://prototype/BlueCar.png" id="2_p5a77"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlqrf"]
+
+[node name="MainGame" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+motion_mode = 1
+slide_on_ceiling = false
+floor_stop_on_slope = false
+floor_block_on_wall = false
+script = ExtResource("1_nmb7p")
+
+[node name="SpriteStack" type="Node2D" parent="Player"]
+script = ExtResource("1_auxoj")
+texture = ExtResource("2_p5a77")
+num_slices = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_tlqrf")
