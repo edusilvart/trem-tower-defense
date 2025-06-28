@@ -21,6 +21,7 @@ script = ExtResource("1_nmb7p")
 script = ExtResource("1_auxoj")
 texture = ExtResource("2_p5a77")
 num_slices = 9
+spin = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("RectangleShape2D_tlqrf")

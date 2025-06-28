@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://38rx5mucbkkj"]
+
+[ext_resource type="Script" path="res://utilities/sprite_stack.gd" id="1_jparl"]
+[ext_resource type="Texture2D" uid="uid://b37k5xdk6pjvh" path="res://prototype/BlueCar.png" id="2_n3nce"]
+
+[node name="SpriteTest" type="Node2D"]
+
+[node name="SpriteStack" type="Node2D" parent="."]
+script = ExtResource("1_jparl")
+texture = ExtResource("2_n3nce")
+num_slices = 9
