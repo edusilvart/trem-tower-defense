@@ -1,0 +1,104 @@
+[gd_scene load_steps=2 format=3 uid="uid://drookcp58ikl5"]
+
+[ext_resource type="Script" path="res://utilities/credits.gd" id="1_h41ce"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h41ce")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Credits Text" type="Label" parent="Background"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.0
+offset_top = 14.0
+offset_right = 69.0
+offset_bottom = 83.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "Credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Main Menu Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -57.0
+offset_right = 123.0
+offset_bottom = -14.0
+grow_vertical = 0
+text = "Main Menu"
+
+[node name="More Games Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 504.0
+offset_top = -58.0
+offset_right = 624.0
+offset_bottom = -15.0
+grow_vertical = 0
+text = "More Games"
+
+[node name="Art and Animation Text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 93.0
+offset_right = 374.0
+offset_bottom = 116.0
+text = "Art and Animation:"
+
+[node name="Edu Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 244.0
+offset_top = -231.0
+offset_right = 364.0
+offset_bottom = -188.0
+grow_vertical = 0
+text = "Edu"
+
+[node name="Programming Text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 186.0
+offset_right = 371.0
+offset_bottom = 209.0
+text = "Art and Animation:"
+
+[node name="Wigner Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 242.0
+offset_top = -130.0
+offset_right = 362.0
+offset_bottom = -87.0
+grow_vertical = 0
+text = "Wigner"
+
+[connection signal="pressed" from="Main Menu Button" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="More Games Button" to="." method="_on_more_games_button_pressed"]
+[connection signal="pressed" from="Edu Button" to="." method="_on_edu_button_pressed"]
+[connection signal="pressed" from="Wigner Button" to="." method="_on_wigner_button_pressed"]
